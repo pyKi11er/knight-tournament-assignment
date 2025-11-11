@@ -67,6 +67,10 @@ public class Game {
             return false;
         }
 
+        if(board.getKnight(toRow, toCol) != null){
+            return false;
+        }
+
         List<int[]> possibleMoves = getPossibleMoves();
         if(possibleMoves == null){
             return false;
